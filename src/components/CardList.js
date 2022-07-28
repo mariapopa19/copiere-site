@@ -5,9 +5,9 @@ const CardList = ({ posts }) => {
     return (
         <div>
             {
-                posts.map((i) => {
+                posts.map((post, i) => {
                     return (
-                        <Card num={posts[i].url} />
+                        <Card num={posts[i].id} />
                     );
                 })
             }

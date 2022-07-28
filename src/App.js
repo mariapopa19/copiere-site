@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import CardList from './components/CardList';
 import Navbar from './components/NavBar';
 import './App.css';
+import 'tachyons';
 
 
 class App extends Component {
@@ -14,7 +15,7 @@ class App extends Component {
   }
 
   componentDidMount() {
-    fetch('https://picsum.photos/v2/list')
+    fetch('https://jsonplaceholder.typicode.com/users')
       .then(response => response.json())
       .then(posts => this.setState({posts: posts}));
   }

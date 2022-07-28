@@ -1,9 +1,9 @@
 import React from 'react';
 
-const Card = ({img}) => {
+const Card = () => {
     return (
-        <div className='tc bg-light-green dib br3 pa3 ma2 grow bw2 shadow-5'>
-            <img alt='error' src={img} />
+        <div className='tc dib br4 ma5 bw2 shadow-5'>
+            <img className='br4' alt='error' src={`https://picsum.photos/300/400?random=${Math.random()}`}/>
         </div>
     );
 }
